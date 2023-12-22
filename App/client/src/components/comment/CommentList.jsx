@@ -5,23 +5,21 @@ const CommentList = () => {
     const [commentList, setCommentList] = useState([]);
 
 
-    const fetchData = async () => {
-        try {
-            const response = await axios.post("/api/comment/getComments");
+    useEffect(() => {
+        axios.post("/api/comment/getComments").then((response) => {
             if (response.data.success) {
                 setCommentList([...response.data.comments]);
             }
-        } catch (error) {
-            console.error("댓글 불러오기 실패:", error);
-        }
-    };
+        })
 
-    useEffect(() => {
-        fetchData();
-
-        const intervalId = setInterval(fetchData, 4000);
-        return () => clearInterval(intervalId);
     }, []);
+
+    // useEffect(() => {
+    //     fetchData();
+
+    //     const intervalId = setInterval(fetchData, 4000);
+    //     return () => clearInterval(intervalId);
+    // }, []);
 
     return (
         <div className="comment_wrap">
