@@ -5,13 +5,15 @@ const CommentList = () => {
     const [commentList, setCommentList] = useState([]);
 
 
-    const fetchData = () => {
-        axios.post("/api/comment/getComments").then((response) => {
+    const fetchData = async () => {
+        try {
+            const response = await axios.get('/api/comment/getComments');
             if (response.data.success) {
                 setCommentList([...response.data.comments]);
             }
-        })
-
+        } catch (error) {
+            console.error(error);
+        }
     };
 
     useEffect(() => {
@@ -25,7 +27,7 @@ const CommentList = () => {
         <div className="comment_wrap">
             {commentList.map((comment) => {
                 return (
-                    <CommentContent comment={comment} />
+                    <CommentContent key={comment.id} comment={comment} />
                 )
             })}
         </div>
