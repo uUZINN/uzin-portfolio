@@ -1,0 +1,388 @@
+.main_career {
+    position: relative;
+    margin-top: 28vw;
+}
+
+.main_career .career_bg {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.career_first {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dbea885a;
+    max-width: 85%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.career_first h3 {
+    font-size: 6vw;
+    text-align: center;
+    max-width: 58%;
+    margin: 0 auto;
+    letter-spacing: -0.2vw;
+}
+
+.career_first p {
+    font-size: 13.5vw;
+    margin-top: -6vw;
+    letter-spacing: 0.15vw;
+
+}
+
+.career_second {
+    height: 120vh;
+    max-width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.career_second .career_cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.career_second .career_icon img {
+    width: 10vw;
+}
+
+.career_second .career_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 70%;
+}
+
+.career_second .career_list>div h4 {
+    font-size: 3vw;
+    letter-spacing: -0.1vw;
+}
+
+.career_second .career_list>div ul {
+    margin-top: 0.5vw;
+}
+
+.career_second .career_list>div ul li {
+    font-weight: 300;
+    font-size: 0.75vw;
+    padding: 0.9rem 0 0.8rem;
+    border-bottom: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--main-ko-light);
+}
+
+.career_second .career_list>div ul li:last-child {
+    border: none;
+}
+
+.career_second .career_list>div {
+    width: 45%;
+}
+
+.cont_container.mainSection_03 {
+    /* margin-top: 10vw; */
+}
+
+.career_text {
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    width: 100%;
+    bottom: 13%;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 1vw;
+    font-family: var(--main-ko-light);
+}
+
+
+
+
+.donate-crypto-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: text;
+}
+
+.coin {
+    display: inline-block;
+    position: relative;
+    min-width: 12em;
+    min-height: 12em;
+    -webkit-animation: spin 3s cubic-bezier(0.3, 2, 0.4, 0.8) infinite both;
+    animation: spin 3s cubic-bezier(0.3, 2, 0.4, 0.8) infinite both;
+    transform-style: preserve-3d;
+    vertical-align: middle;
+}
+
+@-webkit-keyframes spin {
+
+    0%,
+    10% {
+        transform: rotate(-0) perspective(400px);
+    }
+
+    90%,
+    100% {
+        transform: rotate(-0) perspective(400px) rotateY(180deg);
+    }
+}
+
+@keyframes spin {
+
+    0%,
+    10% {
+        transform: rotate(0) perspective(400px);
+    }
+
+    90%,
+    100% {
+        transform: rotate(-0) perspective(400px) rotateY(180deg);
+    }
+}
+
+.coin-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+}
+
+.coin-face:nth-child(1) {
+    transform: translateZ(-0.2em) rotateY(-180deg);
+    backface-visibility: hidden;
+    /* 뒷면을 감추는 속성 추가 */
+}
+
+.coin-face:nth-child(2) {
+    transform: translateZ(-0.1em);
+    backface-visibility: hidden;
+    /* 뒷면을 감추는 속성 추가 */
+}
+
+.coin-face:nth-child(4) {
+    transform: translateZ(0.1em);
+    backface-visibility: hidden;
+    /* 뒷면을 감추는 속성 추가 */
+}
+
+.coin-face:nth-child(5) {
+    transform: translateZ(0.2em);
+    backface-visibility: hidden;
+    /* 뒷면을 감추는 속성 추가 */
+}
+
+.coin-face svg {
+    width: 100%;
+    height: 100%;
+}
+
+.coin-address {
+    flex: 1;
+    font: 0.7em/2.5 Monaco, monospace;
+    text-align: center;
+    margin-left: 1em;
+    border-width: 0 0 2px;
+    border-color: rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+    cursor: text;
+}
+
+.coin-address:hover {
+    transition-duration: 0.1s;
+}
+
+.btc {
+    max-width: 21em;
+}
+
+.btc .coin-face {
+    background: shade(#ff9900, 35%);
+}
+
+.donate-crypto-box:nth-child(1) .coin {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+
+
+
+@media (max-width: 1495px) {
+
+    .career_first {
+        height: 55vw;
+    }
+
+    .career_second {
+        height: 55vw;
+        max-width: 90%;
+    }
+
+    .career_second .career_list>div ul li {
+        font-weight: 300;
+        font-size: 0.9vw;
+        padding: 0.9vw 0;
+    }
+
+    .career_second .career_list>div {
+        width: 47%;
+    }
+
+    .career_second .career_list {
+        width: 75%;
+    }
+
+}
+
+@media(max-width: 800px) {
+
+    .career_first {
+        max-width: 100%;
+    }
+
+    .career_first h3 {
+        max-width: 60%;
+    }
+
+    .career_second {
+        height: 53vw;
+        max-width: 90%;
+    }
+
+    .career_second .career_list {
+        width: 100%;
+    }
+
+    .career_icon {
+        display: none;
+    }
+
+    .career_second .career_list>div h4 {
+        font-size: 4vw;
+    }
+
+    .career_second .career_list>div ul {
+        margin-top: 1.5vw;
+    }
+
+    .career_second .career_list>div ul li {
+        font-weight: 300;
+        font-size: 1.3vw;
+        padding: 1.3vw 0;
+    }
+
+    .career_text {
+        font-size: 1.5vw;
+    }
+
+}
+
+@media(max-width: 650px) {
+    .career_second .career_list>div ul li {
+        font-weight: 500;
+        font-size: 1.3vw;
+        padding: 1.3vw 0;
+    }
+
+    .main_career {
+        position: relative;
+    }
+
+    .main_career .career_bg {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        margin-top: 60%;
+        height: auto;
+        z-index: -1;
+        transform: translateX(-50%);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main_career .career_bg img {
+        width: 270%;
+    }
+
+    .career_first {
+        height: 120vw;
+    }
+
+    .career_first h3 {
+        max-width: 100%;
+        font-size: 12vw;
+    }
+
+    .career_first p {
+        font-size: 17.5vw;
+        margin-top: -7vw;
+    }
+
+    .career_second {
+        height: 200vw;
+        max-width: 100%;
+        margin: 30% 0 0;
+        padding: 0 1rem;
+        width: 100%;
+        display: flex;
+    }
+
+    .career_second .career_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .career_second .career_list>div {
+        width: 100%;
+        margin-bottom: 13vw;
+    }
+
+    .career_second .career_list>div h4 {
+        font-size: 9vw;
+    }
+
+    .career_second .career_list>div ul li {
+        font-weight: 500;
+        font-size: 2.6vw;
+        padding: 2.7vw 0;
+    }
+
+    .career_text {
+        font-size: 3vw;
+        width: 90%;
+        transform: translateX(-50%);
+        left: 50%;
+        display: none;
+    }
+
+}

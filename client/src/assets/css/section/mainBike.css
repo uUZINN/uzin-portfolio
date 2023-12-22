@@ -1,0 +1,98 @@
+.main_bike {
+    overflow: hidden;
+}
+
+.main_bike .bike_text {
+    width: 36%;
+    margin: 0 auto 10rem;
+}
+
+.main_bike .bike_text p {
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 1vw;
+    text-align: center;
+    font-size: 0.83vw;
+    letter-spacing: -0.03vw;
+    font-family: var(--main-ko-light);
+    overflow: hidden;
+}
+
+.main_bike .bike_text p em {
+    font-weight: 500;
+    font-size: 0.83vw;
+    font-family: var(--main-ko);
+}
+
+.bike_cont {
+    text-align: center;
+}
+
+.bike_cont img {
+    width: 45%;
+    margin-bottom: -1vw;
+    text-align: center;
+    position: relative;
+    margin-left: -50vw;
+}
+
+.bike_cont h3 {
+    font-size: 15.5vw;
+    letter-spacing: -0.7vw;
+    line-height: 0.8;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bike_cont p {
+    font-size: 3.5vw;
+    letter-spacing: -0.1vw;
+    margin-top: 1vw;
+    overflow: hidden;
+}
+
+
+@media (max-width: 1495px) {
+    .main_bike .bike_text p {
+        font-size: 1vw;
+    }
+
+    .main_bike .bike_text {
+        width: 45%;
+        margin: 0 auto 10vw;
+    }
+
+    .bike_cont h3 {
+        font-size: 15.5vw;
+    }
+}
+
+@media(max-width: 800px) {
+    .main_bike .bike_text p {
+        font-size: 1.8vw;
+        margin-bottom: 3vw;
+    }
+
+    .main_bike .bike_text p em {
+        font-size: 1.8vw;
+    }
+
+    .main_bike .bike_text {
+        width: 80%;
+    }
+}
+
+@media(max-width: 650px) {
+    .main_bike .bike_text {
+        width: 90%;
+    }
+
+    .main_bike .bike_text p {
+        font-size: 2.8vw;
+    }
+
+    .main_bike .bike_text p em {
+        font-size: 2.8vw;
+    }
+
+}

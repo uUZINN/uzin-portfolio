@@ -1,0 +1,56 @@
+.main_text {
+    text-align: center;
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+}
+
+.main_text h3 {
+    font-size: 16.5vw;
+    letter-spacing: -0.6vw;
+    line-height: 0.8;
+    margin-top: 7vw;
+    max-height: 1013px;
+}
+
+.main_text h3 span {
+    display: block;
+    overflow: hidden;
+}
+
+
+.main_text p {
+    font-size: 1.1vw;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 3vw;
+}
+
+
+@media (max-width: 1650px) {
+
+    .main_text {
+        font-size: 16vw;
+    }
+}
+
+
+@media (max-width: 1495px) {}
+
+@media(max-width: 800px) {
+    .main_text p {
+        font-size: 2vw;
+        font-weight: 300;
+    }
+}
+
+@media(max-width: 650px) {
+
+    .main_text p {
+        font-size: 2.7vw;
+        font-weight: 500;
+    }
+
+    .main_text {
+        margin-top: 15vw;
+    }
+}

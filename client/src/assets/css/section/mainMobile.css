@@ -1,0 +1,94 @@
+.main_mobile {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile_ani {
+    max-width: 60%;
+    display: flex;
+    margin: 15vw auto;
+
+}
+
+.mobile_ani .pin-spacer {
+    height: auto;
+}
+
+.mobile_ani .mobile01 {
+    margin-right: -4rem;
+}
+
+.mobile_ani .mobile01 img {
+    transform: translate3d(0px, 6em, 0px) scale3d(1, 1, 1) rotateZ(343deg);
+    margin-top: 1vw;
+}
+
+.mobile_ani .macbook {
+    background-image: url(../../img/main_box.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding-bottom: 10vw;
+}
+
+.mobile_ani .mobile02 {
+    margin-left: -11.5vw;
+    background-image: url(../../img/main_est.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-y: 3.5vw;
+    padding: 0 4.5vw;
+}
+
+.mobile_ani .mobile02 img {
+    transform: translate3d(0px, 6em, 0px) scale3d(1, 1, 1) rotateZ(11deg);
+}
+
+.mobile_ani img {
+    border-radius: 10px;
+}
+
+@media (max-width: 1650px) {}
+
+
+@media (max-width: 1495px) {
+
+    .mobile_ani {
+        max-width: 75%;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .mobile_ani {
+        max-width: 90%;
+    }
+
+    .mobile_ani .macbook {
+        padding-bottom: 15vw;
+        background-size: 90%;
+    }
+}
+
+@media(max-width: 650px) {
+
+    .mobile_ani {
+        margin: 34vw auto 40vw;
+    }
+
+    .mobile_ani .mobile02 {
+        margin-left: -18.5vw;
+        background-position-y: 3.5vw;
+        padding: 0;
+        background-size: 50%;
+    }
+}

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* 기본 설정 */
+@import "setting/fonts.css";
+@import "setting/reset.css";
+@import "setting/vars.css";
+@import "setting/common.css";
+
+/* 섹션별 설정 */
+@import "section/layout.css";
+@import "section/mainVisual.css";
+@import "section/mainText.css";
+@import "section/mainIntro.css";
+@import "section/mainWork.css";
+@import "section/mainBike.css";
+@import "section/mainMobile.css";
+@import "section/mainCareer.css";
+@import "section/mainText02.css";
+@import "section/mainRecord.css";
+@import "section/mainContact.css";

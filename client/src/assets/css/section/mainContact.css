@@ -1,0 +1,577 @@
+#mainSection.mainContact {
+    position: relative;
+    z-index: 9999;
+}
+
+#mainSection.cont_container {
+    position: relative;
+    z-index: 9999;
+}
+
+.main_contact {
+    background-color: var(--sub-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 12vw;
+}
+
+.comment_wrap {
+    color: var(--subBg-color);
+    text-transform: none;
+    width: 100%;
+    margin-top: 2rem;
+    max-height: 452px;
+    min-height: 452px;
+    overflow-y: scroll;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+}
+.comment_wrap::-webkit-scrollbar {
+    width: 8px;
+}
+
+.comment_wrap::-webkit-scrollbar-track {
+    background-color: #f2f2f200;
+    border-radius: 50px;
+}
+
+.comment_wrap::-webkit-scrollbar-thumb {
+    background: #ffffff47;
+    border-radius: 50px;
+}
+
+
+.comment_wrap>div:nth-child(2n) {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+.comment_wrap>div:nth-child(2n) .comment_cont {
+    flex-direction: row-reverse;
+}
+
+.comment_wrap>div:nth-child(2n) .comment_cont .view_list {
+    left: auto;
+    right: 20px;
+}
+
+.comment_wrap>div:nth-child(2n) .text span {
+    display: inline-flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+.comment_wrap .text span {
+    font-size: 1.1rem;
+
+}
+
+.comment_wrap>div:nth-child(2n) .text span.date {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+}
+
+.comment_wrap>div:nth-child(2n) .comment_cont .comment {
+    padding: 1rem 1rem 0.9rem;
+    border-radius: 10px 0px 10px 10px;
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+.comment_wrap .text>span {
+    margin-bottom: 0.7rem;
+    display: inline-block;
+    align-items: flex-end;
+}
+
+.comment_wrap .text span.date {
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.comment_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.comment_cont .view_list {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -6px;
+    left: 20px;
+    border-radius: 50px;
+}
+
+.comment_cont .comment_toggle {
+    display: flex;
+    position: relative;
+}
+
+.comment_cont .comment_toggle span {
+    cursor: pointer;
+}
+
+.comment_cont .view_list button {
+    color: #878787;
+    text-align: center;
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.comment_cont .view_list button.modify svg {
+    width: 15px;
+    height: 15px;
+}
+
+.comment_cont .view_list button svg {
+    width: 18px;
+    height: 18px;
+}
+
+.comment_cont .comment {
+    color: var(--sub-color);
+    background-color: var(--subBg-color);
+    padding: 1rem 1rem 0.9rem;
+    border-radius: 0px 10px 10px 10px;
+    margin-right: 1rem;
+    font-weight: 100;
+}
+
+.comment_cont input.comment {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.comment_cont form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.comment_cont form div {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    margin-right: 0.5rem;
+}
+
+.comment_wrap>div:nth-child(2n) .comment_cont form {
+    flex-direction: row-reverse;
+
+}
+
+.comment_wrap>div:nth-child(2n) .comment_cont form div {
+    margin-right: 0;
+    flex-direction: row-reverse;
+    margin-left: 0.5rem;
+}
+
+.comment_cont form button {
+    color: #878787;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+}
+
+.comment_cont img {
+    width: 5px;
+    height: 20px;
+}
+
+.main_contact>div {
+    width: 45%;
+}
+
+.main_contact div img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.main_contact div.contact_text {
+    width: 45%;
+}
+
+.contact_text h4 {
+    color: var(--subBg-color);
+    font-size: 4vw;
+    letter-spacing: -0.15vw;
+    text-align: center;
+}
+
+.main_contact div.contact_input {
+    width: 100%;
+    margin-top: 0vw;
+}
+
+.comment_write_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_input .comment_write_info label {
+    width: 48%;
+}
+
+.contact_input label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom: 1px solid var(--subBg-color);
+    padding-bottom: 0.5vw;
+    padding-top: 1vw;
+    font-size: 1vw;
+}
+
+.contact_input label input {
+    letter-spacing: -0.05vw;
+    background: none;
+    border: none;
+    color: var(--subBg-color);
+    font-size: 1vw;
+    width: 95%;
+    letter-spacing: -0.08vw;
+    outline: none;
+}
+
+.contact_input label span {
+    color: var(--subBg-color);
+    padding-top: 0.1vw;
+    font-family: var(--main-ko-light);
+}
+
+.contact_input label input::placeholder {
+    color: var(--subBg-color);
+    opacity: 1;
+    /* Firefox */
+}
+
+.contact_input label input::-ms-input-placeholder {
+    /* Edge 12-18 */
+    color: var(--subBg-color);
+}
+
+.contact_input label textarea {
+    background: none;
+    border: none;
+    font-size: 1vw;
+    width: 95%;
+    resize: none;
+    letter-spacing: -0.08vw;
+    outline: none;
+    height: 100px;
+}
+
+.contact_input label textarea::placeholder {
+    color: var(--subBg-color);
+}
+
+.contact_input button {
+    width: 100%;
+    margin-top: 1vw;
+    font-size: 2vw;
+    letter-spacing: -0.08vw;
+    padding: 0.4vw 0 0.2vw;
+    background-color: var(--subBg-color);
+    color: var(--sub-color);
+    outline: none;
+    cursor: pointer;
+}
+
+
+.cont_title {
+    font-size: 16vw;
+    letter-spacing: -0.55vw;
+    text-align: center;
+    color: var(--sub-color);
+}
+
+.cont_ment {
+    font-size: 4vw;
+    letter-spacing: -0.1vw;
+    text-align: center;
+    color: var(--sub-color);
+}
+
+.cont_ment.en {
+    font-size: 6.5vw;
+    letter-spacing: 0;
+    margin-top: -1vw;
+    color: var(--sub-color);
+}
+
+.infor_box {
+    color: var(--subBg-color);
+    background-color: var(--sub-color);
+    padding: 1.3vw 1vw;
+    width: 40%;
+    border-radius: 0.3vw;
+}
+
+.infor_title {
+    display: flex;
+    margin-bottom: 0.7vw;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.infor_title h4 {
+    font-size: 3vw;
+    letter-spacing: -0.15vw;
+}
+
+
+.infor_cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.infor_box .ko {
+    font-size: 0.9vw;
+    letter-spacing: -0.07vw;
+    text-align: right;
+    line-height: 1.3;
+}
+
+.infor_box p.ko {
+    font-size: 1vw;
+    text-align: left;
+    text-transform: none;
+    line-height: 1.4;
+}
+
+.infor_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.infor_btn a {
+    background: none;
+    padding: 0;
+    font-size: 1.7vw;
+    letter-spacing: -0.07vw;
+    border-bottom: 2px solid var(--subBg-color);
+    color: var(--subBg-color);
+}
+
+.infor_right {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: -2vw;
+}
+
+.infor_right img.bike_img {
+    width: 60%;
+}
+
+.infor_right img.foot_logo {
+    width: 22%;
+    margin-left: 4.5vw;
+}
+
+
+
+@media (max-width: 1495px) {
+    .cont_title {
+        font-size: 15.5vw;
+    }
+}
+
+@media(max-width: 800px) {
+    .main_contact {
+        padding: 3vw 8vw;
+    }
+
+    .main_contact div.contact_text {
+        width: 48%;
+    }
+
+    .contact_input label {
+        padding-bottom: 1vw;
+        padding-top: 2.5vw;
+        font-size: 1.5vw;
+    }
+
+    .contact_input label span,
+    .contact_input label input,
+    .contact_input label textarea {
+        font-size: 1.5vw;
+        padding-top: 0vw;
+    }
+
+    .contact_input label textarea {
+        height: 10vw;
+    }
+
+    .contact_input button {
+        font-size: 3vw;
+    }
+
+    .infor_box {
+        padding: 2vw 1.8vw;
+        width: 50%;
+    }
+
+    .infor_title h4 {
+        font-size: 3.5vw;
+    }
+
+    .infor_box .ko {
+        font-size: 1vw;
+        line-height: 1.5;
+    }
+
+    .infor_box p.ko {
+        font-size: 1.5vw;
+    }
+
+    .infor_box p.en2 {
+        font-size: 1.3vw;
+    }
+
+    .infor_btn button {
+        font-size: 2.5vw;
+    }
+}
+
+@media(max-width: 650px) {
+    .main_contact {
+        padding: 3vw;
+        flex-direction: column;
+    }
+
+
+    .main_contact div.contact_text {
+        width: 100%;
+        margin: 25vw 0 25vw;
+        padding: 0 4vw;
+    }
+
+    .main_contact div {
+        width: 100%;
+    }
+
+    .contact_text h4 {
+        font-size: 11vw;
+        letter-spacing: -0.7vw;
+    }
+
+    .contact_input label span,
+    .contact_input label input,
+    .contact_input label textarea {
+        font-size: 3vw;
+        padding-top: 0vw;
+    }
+
+    .contact_input label {
+        padding-bottom: 2vw;
+        padding-top: 5.5vw;
+        font-size: 1.5vw;
+    }
+
+    .contact_input label textarea {
+        height: 30vw;
+    }
+
+    .contact_input button {
+        font-size: 6vw;
+        margin-top: 5vw;
+        padding: 2.4vw 0 2vw;
+    }
+
+    .infor_cont {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .infor_right {
+        width: 100%;
+        margin-top: 25vw;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    .infor_right img.foot_logo {
+        display: none;
+    }
+
+    .infor_right img.bike_img {
+        width: 50%;
+    }
+
+    .cont_title {
+        margin-top: 2vw;
+    }
+
+    .cont_ment {
+        font-size: 6vw;
+    }
+
+    .cont_ment.en {
+        font-size: 13.5vw;
+        letter-spacing: 0;
+        margin-top: -2vw;
+    }
+
+    .infor_box {
+        padding: 4vw 3.8vw;
+        width: 100%;
+        border-radius: 1vw;
+    }
+
+    .infor_title h4 {
+        font-size: 8.5vw;
+        letter-spacing: -0.3vw;
+    }
+
+    .infor_box .ko {
+        font-size: 2vw;
+        line-height: 1.5;
+    }
+
+    .infor_box p.ko {
+        font-size: 3vw;
+        margin: 3vw 0;
+    }
+
+    .infor_box p.en2 {
+        font-size: 3vw;
+    }
+
+    .infor_btn button {
+        font-size: 5.5vw;
+    }
+}

@@ -1,0 +1,78 @@
+.main_text02 {
+    text-align: center;
+}
+
+.main_text02 h3 {
+    font-size: 12vw;
+    letter-spacing: -0.3vw;
+    line-height: 0.8;
+    overflow: hidden;
+}
+
+.main_text02 h3 div {}
+
+.main_text02 h3 span {
+    display: block;
+
+}
+
+.main_text02 h3 div.line:first-child span {
+    background-image: linear-gradient(to bottom right, #DCEA88, #C6EA9A);
+    /* 그라데이션 설정 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main_text02 h3 div.line:nth-child(2) span {
+    color: #C6EA9A;
+}
+
+.main_text02 h3 div.line:last-child span {
+    background-image: linear-gradient(to bottom right, #C6EA9A, #AAEAB3);
+    /* 그라데이션 설정 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.main_text02 p.ko {
+    font-size: 1vw;
+    line-height: 1.4;
+    text-transform: none;
+    font-weight: 100;
+    font-family: var(--main-ko-light);
+    margin-top: 2vw;
+    color: #AAEAB3;
+}
+
+@media (max-width: 1650px) {}
+
+
+@media (max-width: 1495px) {
+    .main_text02 p.ko {
+        font-size: 1vw;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .main_text02 {
+        font-size: 11.5vw;
+    }
+
+    .main_text02 p.ko {
+        font-size: 1.5vw;
+    }
+}
+
+@media(max-width: 650px) {
+
+    .main_text02 p.ko {
+        font-size: 2.5vw;
+        margin-top: 4vw;
+    }
+
+    .main_text02 {
+        margin-top: -60vw;
+    }
+}
