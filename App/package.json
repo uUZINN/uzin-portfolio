@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "build": "parcel build index.html"
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "18.18.2",
+    "npm": "10.2.5"
   },
   "keywords": [],
   "author": "",
