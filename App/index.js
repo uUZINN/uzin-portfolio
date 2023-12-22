@@ -1,11 +1,12 @@
 const express = require("express");
+const cors = require('cors');
 const path = require("path");
 const mongoose = require("mongoose");
 
 const app = express();
 const port = process.env.PORT || 2024;
 const config = require("./server/config/key.js");
-
+app.use(cors());
 app.use(express.static(path.join(__dirname, "./client/build")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
