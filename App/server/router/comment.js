@@ -24,6 +24,7 @@ router.post("/submit", async (req, res) => {
 });
 
 router.post("/getComments", async (req, res) => {
+
     try {
         const comments = await Comment.find().exec();
 
