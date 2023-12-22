@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import CommentContent from './CommentContent';
 import axios from 'axios';
-const CommentList = () => {
+const CommentList = (props) => {
     const [commentList, setCommentList] = useState([]);
 
-    
+
     useEffect(() => {
-        axios.post("/api/comment/getComments").then((response) => {
+        let body = {
+            comment: comment,
+            nickName: nickName,
+            password: password,
+            commentId: props.comment._id,
+        }
+        axios.post("/api/comment/getComments", body).then((response) => {
             if (response.data.success) {
                 setCommentList([...response.data.comments])
                 console.log([...response.data.comments])
@@ -22,9 +28,9 @@ const CommentList = () => {
                 console.error("댓글 불러오기 실패:", error);
             }
         };
-    
+
         fetchData();
-    
+
         const intervalId = setInterval(fetchData, 4000);
         return () => clearInterval(intervalId);
     }, [])
