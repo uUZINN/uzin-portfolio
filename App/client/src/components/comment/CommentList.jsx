@@ -5,21 +5,21 @@ const CommentList = () => {
     const [commentList, setCommentList] = useState([]);
 
 
-    useEffect(() => {
+    const fetchData = () => {
         axios.post("/api/comment/getComments").then((response) => {
             if (response.data.success) {
                 setCommentList([...response.data.comments]);
             }
         })
 
+    };
+
+    useEffect(() => {
+        fetchData();
+
+        const intervalId = setInterval(fetchData, 4000);
+        return () => clearInterval(intervalId);
     }, []);
-
-    // useEffect(() => {
-    //     fetchData();
-
-    //     const intervalId = setInterval(fetchData, 4000);
-    //     return () => clearInterval(intervalId);
-    // }, []);
 
     return (
         <div className="comment_wrap">
